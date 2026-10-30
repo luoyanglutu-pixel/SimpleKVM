@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "netlist_sha256": "b54f1f99c8de1449b985926847d8d976c1113d993f46d08a57aa5d76fe3327fa",
+  "board": "2026-10-21-2",
+  "gpio_masks": {
+    "BOARD_LED_MASK": 15,
+    "BOARD_SEL0": 64,
+    "BOARD_SEL1": 128,
+    "BOARD_EN": 4,
+    "BOARD_KEY_MASK": 120
+  },
+  "checked": [
+    "MCU/MUX models",
+    "four active-low keys and absent external pullups",
+    "four LED cathodes and series resistors",
+    "two select bits and EN pullup",
+    "SWIO/NRST/GND header"
+  ],
+  "scope": "exported connectivity + firmware mask definitions; no physical PCB verification"
+}

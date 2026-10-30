@@ -1,0 +1,18 @@
+*.md text eol=lf
+*.txt text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.enet text eol=lf
+*.SLDPRT binary
+*.SLDASM binary
+*.STL binary
+*.3mf binary
+*.3MF binary
+*.xlsx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.zip binary
+

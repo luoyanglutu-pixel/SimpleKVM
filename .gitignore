@@ -1,0 +1,20 @@
+# Local build and tool state
+软件设计/build/
+软件设计/tools/local_config.json
+tmp/
+__pycache__/
+*.pyc
+
+# CAD/editor temporary files
+~$*
+*.bak
+*.tmp
+*.autosave
+.DS_Store
+Thumbs.db
+
+# IDE state
+.vs/
+.vscode/
+.idea/
+

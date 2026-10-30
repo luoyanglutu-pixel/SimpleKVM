@@ -1,0 +1,1897 @@
+{
+  "title": "四电脑键鼠共享器 V0.7 实际导出网表连接快照",
+  "date": "2026-10-20",
+  "source": "Netlist_SCH_new_2026-10-20-2.enet",
+  "source_sha256": "ca55bf1bb31056c064567f8b56f52a782d27047d365f0d9eea7e337cd0762682",
+  "status": "依据用户导出网表提取；不是原生EDA文件，不包含PCB封装几何和ERC结论",
+  "components": 59,
+  "fitted_components": 55,
+  "dnp_components": [
+    "R1",
+    "R2",
+    "R3",
+    "R4"
+  ],
+  "nonempty_nets": 54,
+  "core_refs": {
+    "hub": "U6",
+    "mux": "KEY1",
+    "mcu": "U8"
+  },
+  "download_header": {
+    "reference": "H1",
+    "1": "SWIO",
+    "2": "NRST",
+    "3": "GND"
+  },
+  "pending_recommendations": [
+    "C2当前100nF，建议改1uF并靠近U6.15；尚未修改原图",
+    "F1-F4压降、X1起振、输入浪涌和USB供电模式待实测/确认"
+  ],
+  "supply_capacitance_uF": {
+    "shared_SYS_5V_nominal_direct": 11.3,
+    "each_CH213K_input_nominal": 10.0
+  },
+  "parts": [
+    {
+      "reference": "C10",
+      "model": "10uF",
+      "value": "10uF",
+      "package": "0603",
+      "assembly": "FIT",
+      "supplier_part": "",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N9316"
+        }
+      ]
+    },
+    {
+      "reference": "USB1",
+      "model": "KH-TYPE-C-16P",
+      "value": "",
+      "package": "SMD",
+      "assembly": "FIT",
+      "supplier_part": "C709357",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "3",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "4",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "A12",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "A9",
+          "name": "VBUS",
+          "net_or_connection": "PC0_VBUS"
+        },
+        {
+          "pin": "A8",
+          "name": "SUB1",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "A7",
+          "name": "DN1",
+          "net_or_connection": "PC0_D-"
+        },
+        {
+          "pin": "A6",
+          "name": "DP1",
+          "net_or_connection": "PC0_D+"
+        },
+        {
+          "pin": "A5",
+          "name": "CC1",
+          "net_or_connection": "$1N8948"
+        },
+        {
+          "pin": "A4",
+          "name": "VBUS",
+          "net_or_connection": "PC0_VBUS"
+        },
+        {
+          "pin": "A1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "B12",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "B9",
+          "name": "VBUS",
+          "net_or_connection": "PC0_VBUS"
+        },
+        {
+          "pin": "B8",
+          "name": "SUB2",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "B7",
+          "name": "DN2",
+          "net_or_connection": "PC0_D-"
+        },
+        {
+          "pin": "B6",
+          "name": "DP2",
+          "net_or_connection": "PC0_D+"
+        },
+        {
+          "pin": "B5",
+          "name": "CC2",
+          "net_or_connection": "$1N8947"
+        },
+        {
+          "pin": "B4",
+          "name": "VBUS",
+          "net_or_connection": "PC0_VBUS"
+        },
+        {
+          "pin": "B1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "USB2",
+      "model": "KH-TYPE-C-16P",
+      "value": "",
+      "package": "SMD",
+      "assembly": "FIT",
+      "supplier_part": "C709357",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "3",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "4",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "A12",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "A9",
+          "name": "VBUS",
+          "net_or_connection": "PC1_VBUS"
+        },
+        {
+          "pin": "A8",
+          "name": "SUB1",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "A7",
+          "name": "DN1",
+          "net_or_connection": "PC1_D-"
+        },
+        {
+          "pin": "A6",
+          "name": "DP1",
+          "net_or_connection": "PC1_D+"
+        },
+        {
+          "pin": "A5",
+          "name": "CC1",
+          "net_or_connection": "$1N8968"
+        },
+        {
+          "pin": "A4",
+          "name": "VBUS",
+          "net_or_connection": "PC1_VBUS"
+        },
+        {
+          "pin": "A1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "B12",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "B9",
+          "name": "VBUS",
+          "net_or_connection": "PC1_VBUS"
+        },
+        {
+          "pin": "B8",
+          "name": "SUB2",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "B7",
+          "name": "DN2",
+          "net_or_connection": "PC1_D-"
+        },
+        {
+          "pin": "B6",
+          "name": "DP2",
+          "net_or_connection": "PC1_D+"
+        },
+        {
+          "pin": "B5",
+          "name": "CC2",
+          "net_or_connection": "$1N8967"
+        },
+        {
+          "pin": "B4",
+          "name": "VBUS",
+          "net_or_connection": "PC1_VBUS"
+        },
+        {
+          "pin": "B1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "USB3",
+      "model": "KH-TYPE-C-16P",
+      "value": "",
+      "package": "SMD",
+      "assembly": "FIT",
+      "supplier_part": "C709357",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "3",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "4",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "A12",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "A9",
+          "name": "VBUS",
+          "net_or_connection": "PC2_VBUS"
+        },
+        {
+          "pin": "A8",
+          "name": "SUB1",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "A7",
+          "name": "DN1",
+          "net_or_connection": "PC2_D-"
+        },
+        {
+          "pin": "A6",
+          "name": "DP1",
+          "net_or_connection": "PC2_D+"
+        },
+        {
+          "pin": "A5",
+          "name": "CC1",
+          "net_or_connection": "$1N8988"
+        },
+        {
+          "pin": "A4",
+          "name": "VBUS",
+          "net_or_connection": "PC2_VBUS"
+        },
+        {
+          "pin": "A1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "B12",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "B9",
+          "name": "VBUS",
+          "net_or_connection": "PC2_VBUS"
+        },
+        {
+          "pin": "B8",
+          "name": "SUB2",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "B7",
+          "name": "DN2",
+          "net_or_connection": "PC2_D-"
+        },
+        {
+          "pin": "B6",
+          "name": "DP2",
+          "net_or_connection": "PC2_D+"
+        },
+        {
+          "pin": "B5",
+          "name": "CC2",
+          "net_or_connection": "$1N8987"
+        },
+        {
+          "pin": "B4",
+          "name": "VBUS",
+          "net_or_connection": "PC2_VBUS"
+        },
+        {
+          "pin": "B1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "USB4",
+      "model": "KH-TYPE-C-16P",
+      "value": "",
+      "package": "SMD",
+      "assembly": "FIT",
+      "supplier_part": "C709357",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "3",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "4",
+          "name": "EP",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "A12",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "A9",
+          "name": "VBUS",
+          "net_or_connection": "PC3_VBUS"
+        },
+        {
+          "pin": "A8",
+          "name": "SUB1",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "A7",
+          "name": "DN1",
+          "net_or_connection": "PC3_D-"
+        },
+        {
+          "pin": "A6",
+          "name": "DP1",
+          "net_or_connection": "PC3_D+"
+        },
+        {
+          "pin": "A5",
+          "name": "CC1",
+          "net_or_connection": "$1N9008"
+        },
+        {
+          "pin": "A4",
+          "name": "VBUS",
+          "net_or_connection": "PC3_VBUS"
+        },
+        {
+          "pin": "A1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "B12",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "B9",
+          "name": "VBUS",
+          "net_or_connection": "PC3_VBUS"
+        },
+        {
+          "pin": "B8",
+          "name": "SUB2",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "B7",
+          "name": "DN2",
+          "net_or_connection": "PC3_D-"
+        },
+        {
+          "pin": "B6",
+          "name": "DP2",
+          "net_or_connection": "PC3_D+"
+        },
+        {
+          "pin": "B5",
+          "name": "CC2",
+          "net_or_connection": "$1N9007"
+        },
+        {
+          "pin": "B4",
+          "name": "VBUS",
+          "net_or_connection": "PC3_VBUS"
+        },
+        {
+          "pin": "B1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "R13",
+      "model": "FRC0402F5101TS",
+      "value": "5.1kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N8948"
+        }
+      ]
+    },
+    {
+      "reference": "R14",
+      "model": "FRC0402F5101TS",
+      "value": "5.1kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N8947"
+        }
+      ]
+    },
+    {
+      "reference": "R15",
+      "model": "FRC0402F5101TS",
+      "value": "5.1kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N8968"
+        }
+      ]
+    },
+    {
+      "reference": "R16",
+      "model": "FRC0402F5101TS",
+      "value": "5.1kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N8967"
+        }
+      ]
+    },
+    {
+      "reference": "R17",
+      "model": "FRC0402F5101TS",
+      "value": "5.1kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N8988"
+        }
+      ]
+    },
+    {
+      "reference": "R18",
+      "model": "FRC0402F5101TS",
+      "value": "5.1kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N8987"
+        }
+      ]
+    },
+    {
+      "reference": "R19",
+      "model": "FRC0402F5101TS",
+      "value": "5.1kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N9008"
+        }
+      ]
+    },
+    {
+      "reference": "R20",
+      "model": "FRC0402F5101TS",
+      "value": "5.1kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N9007"
+        }
+      ]
+    },
+    {
+      "reference": "U2",
+      "model": "CH213K",
+      "value": "",
+      "package": "SOT-23-3",
+      "assembly": "FIT",
+      "supplier_part": "C5456874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "VO-",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "3",
+          "name": "VI+",
+          "net_or_connection": "$1N9316"
+        }
+      ]
+    },
+    {
+      "reference": "C4",
+      "model": "10uF",
+      "value": "10uF",
+      "package": "0603",
+      "assembly": "FIT",
+      "supplier_part": "",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "SYS_5V"
+        }
+      ]
+    },
+    {
+      "reference": "C5",
+      "model": "10uF",
+      "value": "10uF",
+      "package": "0603",
+      "assembly": "FIT",
+      "supplier_part": "",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N9314"
+        }
+      ]
+    },
+    {
+      "reference": "U1",
+      "model": "CH213K",
+      "value": "",
+      "package": "SOT-23-3",
+      "assembly": "FIT",
+      "supplier_part": "C5456874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "VO-",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "3",
+          "name": "VI+",
+          "net_or_connection": "$1N9314"
+        }
+      ]
+    },
+    {
+      "reference": "C7",
+      "model": "10uF",
+      "value": "10uF",
+      "package": "0603",
+      "assembly": "FIT",
+      "supplier_part": "",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N9312"
+        }
+      ]
+    },
+    {
+      "reference": "U3",
+      "model": "CH213K",
+      "value": "",
+      "package": "SOT-23-3",
+      "assembly": "FIT",
+      "supplier_part": "C5456874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "VO-",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "3",
+          "name": "VI+",
+          "net_or_connection": "$1N9312"
+        }
+      ]
+    },
+    {
+      "reference": "C9",
+      "model": "10uF",
+      "value": "10uF",
+      "package": "0603",
+      "assembly": "FIT",
+      "supplier_part": "",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$1N9309"
+        }
+      ]
+    },
+    {
+      "reference": "U4",
+      "model": "CH213K",
+      "value": "",
+      "package": "SOT-23-3",
+      "assembly": "FIT",
+      "supplier_part": "C5456874",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "VO-",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "3",
+          "name": "VI+",
+          "net_or_connection": "$1N9309"
+        }
+      ]
+    },
+    {
+      "reference": "F1",
+      "model": "SMD0603-050-16",
+      "value": "",
+      "package": "0603",
+      "assembly": "FIT",
+      "supplier_part": "C46640964",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "$1N9316"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "PC0_VBUS"
+        }
+      ]
+    },
+    {
+      "reference": "F2",
+      "model": "SMD0603-050-16",
+      "value": "",
+      "package": "0603",
+      "assembly": "FIT",
+      "supplier_part": "C46640964",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "$1N9314"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "PC1_VBUS"
+        }
+      ]
+    },
+    {
+      "reference": "F3",
+      "model": "SMD0603-050-16",
+      "value": "",
+      "package": "0603",
+      "assembly": "FIT",
+      "supplier_part": "C46640964",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "$1N9312"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "PC2_VBUS"
+        }
+      ]
+    },
+    {
+      "reference": "F4",
+      "model": "SMD0603-050-16",
+      "value": "",
+      "package": "0603",
+      "assembly": "FIT",
+      "supplier_part": "C46640964",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "$1N9309"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "PC3_VBUS"
+        }
+      ]
+    },
+    {
+      "reference": "USB5",
+      "model": "USB-231-ARY",
+      "value": "",
+      "package": "插件",
+      "assembly": "FIT",
+      "supplier_part": "C720525",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "VBUS",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "D-",
+          "net_or_connection": "HD0_D-"
+        },
+        {
+          "pin": "3",
+          "name": "D+",
+          "net_or_connection": "HD0_D+"
+        },
+        {
+          "pin": "4",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "5",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "6",
+          "name": "GND",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "USB6",
+      "model": "USB-231-ARY",
+      "value": "",
+      "package": "插件",
+      "assembly": "FIT",
+      "supplier_part": "C720525",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "VBUS",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "D-",
+          "net_or_connection": "HD1_D-"
+        },
+        {
+          "pin": "3",
+          "name": "D+",
+          "net_or_connection": "HD1_D+"
+        },
+        {
+          "pin": "4",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "5",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "6",
+          "name": "GND",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "USB7",
+      "model": "USB-231-ARY",
+      "value": "",
+      "package": "插件",
+      "assembly": "FIT",
+      "supplier_part": "C720525",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "VBUS",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "D-",
+          "net_or_connection": "HD2_D-"
+        },
+        {
+          "pin": "3",
+          "name": "D+",
+          "net_or_connection": "HD2_D+"
+        },
+        {
+          "pin": "4",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "5",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "6",
+          "name": "GND",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "U6",
+      "model": "CH334P",
+      "value": "",
+      "package": "QFN-16(3x3)",
+      "assembly": "FIT",
+      "supplier_part": "C5373042",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "XO",
+          "net_or_connection": "$2N11886"
+        },
+        {
+          "pin": "2",
+          "name": "XI",
+          "net_or_connection": "$2N11887"
+        },
+        {
+          "pin": "3",
+          "name": "DM4",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "4",
+          "name": "DP4",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "5",
+          "name": "DM3",
+          "net_or_connection": "HD2_D-"
+        },
+        {
+          "pin": "6",
+          "name": "DP3",
+          "net_or_connection": "HD2_D+"
+        },
+        {
+          "pin": "7",
+          "name": "DM2",
+          "net_or_connection": "HD1_D-"
+        },
+        {
+          "pin": "8",
+          "name": "DP2",
+          "net_or_connection": "HD1_D+"
+        },
+        {
+          "pin": "9",
+          "name": "DM1",
+          "net_or_connection": "HD0_D-"
+        },
+        {
+          "pin": "10",
+          "name": "DP1",
+          "net_or_connection": "HD0_D+"
+        },
+        {
+          "pin": "11",
+          "name": "DMU",
+          "net_or_connection": "HUB_UP_DM"
+        },
+        {
+          "pin": "12",
+          "name": "DPU",
+          "net_or_connection": "HUB_UP_DP"
+        },
+        {
+          "pin": "13",
+          "name": "RESET#/CDP",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "14",
+          "name": "PGANG",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "15",
+          "name": "V5",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "16",
+          "name": "VDD33",
+          "net_or_connection": "HUB_VDD33"
+        },
+        {
+          "pin": "17",
+          "name": "GND",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "KEY1",
+      "model": "CH444G",
+      "value": "",
+      "package": "SOP-16",
+      "assembly": "FIT",
+      "supplier_part": "C86413",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "EN#",
+          "net_or_connection": "MUX_EN_N"
+        },
+        {
+          "pin": "2",
+          "name": "IN1",
+          "net_or_connection": "MUX_SEL1"
+        },
+        {
+          "pin": "3",
+          "name": "S4A",
+          "net_or_connection": "PC3_D+"
+        },
+        {
+          "pin": "4",
+          "name": "S3A",
+          "net_or_connection": "PC2_D+"
+        },
+        {
+          "pin": "5",
+          "name": "S2A",
+          "net_or_connection": "PC1_D+"
+        },
+        {
+          "pin": "6",
+          "name": "S1A",
+          "net_or_connection": "PC0_D+"
+        },
+        {
+          "pin": "7",
+          "name": "YA",
+          "net_or_connection": "HUB_UP_DP"
+        },
+        {
+          "pin": "8",
+          "name": "GND",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "9",
+          "name": "YB",
+          "net_or_connection": "HUB_UP_DM"
+        },
+        {
+          "pin": "10",
+          "name": "S1B",
+          "net_or_connection": "PC0_D-"
+        },
+        {
+          "pin": "11",
+          "name": "S2B",
+          "net_or_connection": "PC1_D-"
+        },
+        {
+          "pin": "12",
+          "name": "S3B",
+          "net_or_connection": "PC2_D-"
+        },
+        {
+          "pin": "13",
+          "name": "S4B",
+          "net_or_connection": "PC3_D-"
+        },
+        {
+          "pin": "14",
+          "name": "IN0",
+          "net_or_connection": "MUX_SEL0"
+        },
+        {
+          "pin": "15",
+          "name": "NC",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "16",
+          "name": "VCC",
+          "net_or_connection": "SYS_5V"
+        }
+      ]
+    },
+    {
+      "reference": "C11",
+      "model": "FCC0402B104K160AT",
+      "value": "100nF",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C5137468",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "SYS_5V"
+        }
+      ]
+    },
+    {
+      "reference": "R9",
+      "model": "FRC0402J103 TS",
+      "value": "10kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906885",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "MUX_EN_N"
+        }
+      ]
+    },
+    {
+      "reference": "R10",
+      "model": "0402WGF1003TCE",
+      "value": "100kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C25741",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "MUX_SEL0"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "R11",
+      "model": "0402WGF1003TCE",
+      "value": "100kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C25741",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "MUX_SEL1"
+        }
+      ]
+    },
+    {
+      "reference": "C2",
+      "model": "FCC0402B104K160AT",
+      "value": "100nF",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C5137468",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "SYS_5V"
+        }
+      ]
+    },
+    {
+      "reference": "X1",
+      "model": "X49SD12MSD2SC",
+      "value": "12MHz",
+      "package": "HC-49S",
+      "assembly": "FIT",
+      "supplier_part": "C16369",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "OSC1",
+          "net_or_connection": "$2N11886"
+        },
+        {
+          "pin": "2",
+          "name": "OSC2",
+          "net_or_connection": "$2N11887"
+        }
+      ]
+    },
+    {
+      "reference": "C1",
+      "model": "FCC0402B104K160AT",
+      "value": "100nF",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C5137468",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "HUB_VDD33"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "C12",
+      "model": "CL05A105KO5NNNC",
+      "value": "1uF",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C29266",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "HUB_VDD33"
+        }
+      ]
+    },
+    {
+      "reference": "C3",
+      "model": "FCC0402B104K160AT",
+      "value": "100nF",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C5137468",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "SYS_5V"
+        }
+      ]
+    },
+    {
+      "reference": "SW1",
+      "model": "TS-1101-C-W",
+      "value": "",
+      "package": "SMD",
+      "assembly": "FIT",
+      "supplier_part": "C318938",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "PC0_SWI"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "SW2",
+      "model": "TS-1101-C-W",
+      "value": "",
+      "package": "SMD",
+      "assembly": "FIT",
+      "supplier_part": "C318938",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "PC1_SWI"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "SW3",
+      "model": "TS-1101-C-W",
+      "value": "",
+      "package": "SMD",
+      "assembly": "FIT",
+      "supplier_part": "C318938",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "PC2_SWI"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "SW4",
+      "model": "TS-1101-C-W",
+      "value": "",
+      "package": "SMD",
+      "assembly": "FIT",
+      "supplier_part": "C318938",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "PC3_SWI"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "GND"
+        }
+      ]
+    },
+    {
+      "reference": "R1",
+      "model": "0402WGJ0472TCE",
+      "value": "4.7kΩ",
+      "package": "0402",
+      "assembly": "DNP",
+      "supplier_part": "C25940",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "PC0_SWI"
+        }
+      ]
+    },
+    {
+      "reference": "R2",
+      "model": "0402WGJ0472TCE",
+      "value": "4.7kΩ",
+      "package": "0402",
+      "assembly": "DNP",
+      "supplier_part": "C25940",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "PC1_SWI"
+        }
+      ]
+    },
+    {
+      "reference": "R3",
+      "model": "0402WGJ0472TCE",
+      "value": "4.7kΩ",
+      "package": "0402",
+      "assembly": "DNP",
+      "supplier_part": "C25940",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "PC2_SWI"
+        }
+      ]
+    },
+    {
+      "reference": "R4",
+      "model": "0402WGJ0472TCE",
+      "value": "4.7kΩ",
+      "package": "0402",
+      "assembly": "DNP",
+      "supplier_part": "C25940",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "PC3_SWI"
+        }
+      ]
+    },
+    {
+      "reference": "R5",
+      "model": "0402WGJ0472TCE",
+      "value": "4.7kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C25940",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$3N15"
+        }
+      ]
+    },
+    {
+      "reference": "R6",
+      "model": "0402WGJ0472TCE",
+      "value": "4.7kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C25940",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$3N14"
+        }
+      ]
+    },
+    {
+      "reference": "R7",
+      "model": "0402WGJ0472TCE",
+      "value": "4.7kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C25940",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$3N13"
+        }
+      ]
+    },
+    {
+      "reference": "R8",
+      "model": "0402WGJ0472TCE",
+      "value": "4.7kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C25940",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "$3N11"
+        }
+      ]
+    },
+    {
+      "reference": "LED1",
+      "model": "XL-502SURD",
+      "value": "",
+      "package": "插件,D=5mm",
+      "assembly": "FIT",
+      "supplier_part": "C2895492",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "K",
+          "net_or_connection": "PC0_LED"
+        },
+        {
+          "pin": "2",
+          "name": "A",
+          "net_or_connection": "$3N15"
+        }
+      ]
+    },
+    {
+      "reference": "LED2",
+      "model": "XL-502SURD",
+      "value": "",
+      "package": "插件,D=5mm",
+      "assembly": "FIT",
+      "supplier_part": "C2895492",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "K",
+          "net_or_connection": "PC1_LED"
+        },
+        {
+          "pin": "2",
+          "name": "A",
+          "net_or_connection": "$3N14"
+        }
+      ]
+    },
+    {
+      "reference": "LED3",
+      "model": "XL-502SURD",
+      "value": "",
+      "package": "插件,D=5mm",
+      "assembly": "FIT",
+      "supplier_part": "C2895492",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "K",
+          "net_or_connection": "PC2_LED"
+        },
+        {
+          "pin": "2",
+          "name": "A",
+          "net_or_connection": "$3N13"
+        }
+      ]
+    },
+    {
+      "reference": "LED4",
+      "model": "XL-502SURD",
+      "value": "",
+      "package": "插件,D=5mm",
+      "assembly": "FIT",
+      "supplier_part": "C2895492",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "K",
+          "net_or_connection": "PC3_LED"
+        },
+        {
+          "pin": "2",
+          "name": "A",
+          "net_or_connection": "$3N11"
+        }
+      ]
+    },
+    {
+      "reference": "U8",
+      "model": "CH32V003F4P6",
+      "value": "",
+      "package": "TSSOP-20-175mil",
+      "assembly": "FIT",
+      "supplier_part": "C5187096",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "PD4/A7/UCK/T2CH1ETR/OPO/T1CH4ETR_",
+          "net_or_connection": "PC1_SWI"
+        },
+        {
+          "pin": "2",
+          "name": "PD5/A5/UTX/T2CH4_/URX_",
+          "net_or_connection": "PC2_SWI"
+        },
+        {
+          "pin": "3",
+          "name": "PD6/A6/URX/T2CH3_/UTX_",
+          "net_or_connection": "PC3_SWI"
+        },
+        {
+          "pin": "4",
+          "name": "PD7/NRST/T2CH4/OPP1/UCK_",
+          "net_or_connection": "NRST"
+        },
+        {
+          "pin": "5",
+          "name": "PA1/OSCI/A1/T1CH2/OPN0",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "6",
+          "name": "PA2/OSCO/A0/T1CH2N/OPP0/AETR2_",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "7",
+          "name": "VSS",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "8",
+          "name": "PD0/T1CH1N/OPN1/SDA_/UTX_",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "9",
+          "name": "VDD",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "10",
+          "name": "PC0/T2CH3/UTX_/NSS_/T1CH3_",
+          "net_or_connection": "PC0_LED"
+        },
+        {
+          "pin": "11",
+          "name": "PC1/SDA/NSS/T2CH4_/T2CH1ETR_/T1BKIN_/URX_",
+          "net_or_connection": "PC1_LED"
+        },
+        {
+          "pin": "12",
+          "name": "PC2/SCL/URTS/T1BKIN/AETR_/T2CH2_/T1ETR_",
+          "net_or_connection": "PC2_LED"
+        },
+        {
+          "pin": "13",
+          "name": "PC3/T1CH3/T1CH1N_/UCTS_",
+          "net_or_connection": "PC3_LED"
+        },
+        {
+          "pin": "14",
+          "name": "PC4/A2/T1CH4/MCO/T1CH1CH2N_",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "15",
+          "name": "PC5/SCK/T1ETR/T2CH1ETR_/SCL_/UCK_/T1CH3_",
+          "net_or_connection": "NC"
+        },
+        {
+          "pin": "16",
+          "name": "PC6/MOSI/T1CH1CH3N_/UCTS_/SDA_",
+          "net_or_connection": "MUX_SEL0"
+        },
+        {
+          "pin": "17",
+          "name": "PC7/MISO/T1CH2_/T2CH2_/URTS_",
+          "net_or_connection": "MUX_SEL1"
+        },
+        {
+          "pin": "18",
+          "name": "PD1/SWIO/AETR2/T1CH3N/SCL_/URX_",
+          "net_or_connection": "SWIO"
+        },
+        {
+          "pin": "19",
+          "name": "PD2/A3/T1CH1/T2CH3_/T1CH2N_",
+          "net_or_connection": "MUX_EN_N"
+        },
+        {
+          "pin": "20",
+          "name": "PD3/A4/T2CH2/AETR/UCTS/T1CH4_",
+          "net_or_connection": "PC0_SWI"
+        }
+      ]
+    },
+    {
+      "reference": "R12",
+      "model": "FRC0402J103 TS",
+      "value": "10kΩ",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C2906885",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SYS_5V"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "NRST"
+        }
+      ]
+    },
+    {
+      "reference": "C13",
+      "model": "CL05A105KO5NNNC",
+      "value": "1uF",
+      "package": "0402",
+      "assembly": "FIT",
+      "supplier_part": "C29266",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "GND"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "SYS_5V"
+        }
+      ]
+    },
+    {
+      "reference": "H1",
+      "model": "LAIL-PZ2.54-3P-L",
+      "value": "",
+      "package": "插件,P=2.54mm",
+      "assembly": "FIT",
+      "supplier_part": "C54950604",
+      "pins": [
+        {
+          "pin": "1",
+          "name": "1",
+          "net_or_connection": "SWIO"
+        },
+        {
+          "pin": "2",
+          "name": "2",
+          "net_or_connection": "NRST"
+        },
+        {
+          "pin": "3",
+          "name": "3",
+          "net_or_connection": "GND"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+#ifndef KVM_APP_CONFIG_H
+#define KVM_APP_CONFIG_H
+
+#include <stdint.h>
+
+#define KVM_VERSION "0.1.1"
+#define KVM_VERSION_CODE UINT32_C(0x000101)
+#define TARGET_COUNT 4u
+#define TARGET_NONE UINT8_C(0xff)
+#define DEFAULT_TARGET 3u
+#define KEY_DEBOUNCE_MS UINT32_C(20)
+#define KEY_SAMPLE_GAP_MAX_MS UINT32_C(2)
+#define BOOT_GAP_TICKS UINT32_C(101)
+#define SWITCH_GAP_TICKS UINT32_C(101)
+#define MUX_SETTLE_TICKS UINT32_C(2)
+#define KVM_SYSCLK_HZ UINT32_C(24000000)
+
+#ifndef KVM_WATCHDOG
+#define KVM_WATCHDOG 0
+#endif
+#ifndef KVM_BRINGUP
+#define KVM_BRINGUP 0
+#endif
+
+enum KvmFault {
+    KVM_FAULT_NONE = 0,
+    KVM_FAULT_TARGET = 1,
+    KVM_FAULT_STATE = 2,
+    KVM_FAULT_IO = 3,
+    KVM_FAULT_CLOCK = 4,
+    KVM_FAULT_WATCHDOG_INIT = 5,
+    KVM_FAULT_EXCEPTION = 6
+};
+
+#endif
